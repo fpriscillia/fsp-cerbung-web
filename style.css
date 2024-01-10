@@ -1,0 +1,136 @@
+body {
+    padding: 20px;
+}
+
+#webtitle {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+#subtitle {
+    margin-top: 0;
+    text-align: center;
+}
+
+.phone-only {
+    display: block;
+}
+
+
+.card {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    min-height: 140px;  
+    background-color: #ffffe6;
+    font-size: 14px;
+}
+
+.card h3 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card p {
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+#btnKumpCerita, #btnCeritaku {
+    width: 180px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.lblJudul, .lblPar{
+    margin-right: 45px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.txtParagraf{
+    margin-left: -35px;
+    position: absolute;
+}
+
+.btnSubmit{
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+    .phone-only {
+        display: none;
+    }
+
+    .kiri {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .ceritaku {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 10px; 
+    }
+
+    .kumpulancerita {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin-top: 30px;
+    }
+
+}
+
+/* layout PC */
+@media (min-width:1024px) {
+    #webtitle, #subtitle {
+       text-align: left; 
+    }
+
+    .container { 
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        /* background-color: #F0FFFF; */
+    } 
+    
+    .phone-only {
+        display: none;
+    }
+    
+    .kiri {
+        order: 1;
+        border-right: 1.5px solid black;
+        padding-right: 30px;
+        /* background-color: #FF69B4; */
+    }
+    
+    .kanan {
+        order: 2;
+        border-left: 1.5px solid black;
+        padding-left: 30px;
+        padding-right: 30px;
+        /* background-color: #ADFF2F; */
+    }
+    
+    .kanan h2 {
+        margin-left: 5px;
+    }
+    
+    .kumpulancerita {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .ceritaku {
+        display: grid;
+    }
+}
